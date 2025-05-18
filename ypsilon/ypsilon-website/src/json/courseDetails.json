@@ -1,0 +1,41 @@
+[
+  {
+    "ImagePath": "src/assets/images/course-01.webp",
+    "CourseTitle": "Instructional System Design Training Course",
+    "CourseOverview": "The programme aims to equip trainers, course creators & e-content developers to understand and implement the pedagogical aspects into content writing and delivery to the learners.",
+    "Program Highlight":{
+        "First ":"100% live virtual classes",
+        "Second":"Experienced and trained faculty",
+        "Third":"30+ hours of live session",
+        "Fourth":"20+ hours projects",
+        "Fifth":"Completion certificate from Ypsilon Advanced Skills Hub (Accredited by N.I.S.T. and ICWA in India"
+    }
+  }
+]
+
+
+
+{
+  "ID": "1",
+  "ImagePath": "src/assets/images/course-01.webp",
+  "CourseTitle": "Instructional System Design Training Course",
+  "CourseOverview": "Ypsilon Advanced Skills Hub offers a 12-day course in Instructional System Design (ISD). Gain expertise in crafting effective instructional systems from expert trainers.",
+  "CourseDescription": "Ypsilon Advanced Skills Hub (YASH) presents a comprehensive 12-day professional training course in Instructional System Design (ISD).This course will equip participants with the knowledge and skills necessary to design effective instructional systems for various educational and training contexts. Expert trainers will guide participants through essential concepts.",
+  "CourseContentSchedule": "  ",
+  "CourseFees": "3000",
+  "DiscountedCourseFees": "2400",
+  "Lessons": "12",
+  "StudentsEnrollCount": "300",
+  "Timing": "Daily Batch from 7.00 PM to 8.30 PM",
+  "InstructorImage": "src/assets/images/Avatar2.png",
+  "Instructor": "Dr. Anjali Jagtap",
+  "Experience": "14+ Years",
+  "Field": "System Design",
+  "Language": "English/Hindi",
+  "Certification": "Cerfified Course",
+  "ReviewsCount": "15",
+  "CourseReview": {
+    "Participant2": "The course was well-structured and easy to follow.",
+    "Participant1": "The instructor was knowledgeable and engaging."
+  }
+}

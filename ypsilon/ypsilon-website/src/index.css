@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl text-[#192335] font-bold; /* Example: font-bold added */
+  }
+  h2 {
+    @apply text-2xl text-[#192335] font-semibold; /* Example: font-semibold added */
+  }
+  h3 {
+    @apply text-xl text-[#192335] font-semibold; /* Example: font-semibold added */
+  }
+  h4 {
+    @apply text-lg text-[#192335] font-medium; /* Example: font-medium added */
+  }
+  h5 {
+    @apply text-base text-[#192335] font-normal; /* Example: font-normal added */
+  }
+  h6 {
+    @apply text-sm text-[#192335] font-normal; /* Example: font-normal added */
+  }
+  p {
+    @apply text-xs text-[#192335] font-normal; /* Example: font-normal added */
+  }
+}
+
+@font-face {
+  font-family: 'Futura ND Display';
+  src: url('path/to/futura-nd-display.woff2') format('woff2'),
+    url('path/to/futura-nd-display.woff') format('woff');
+  /* Add other font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}

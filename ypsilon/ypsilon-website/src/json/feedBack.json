@@ -1,0 +1,32 @@
+[
+  {
+    "Image": "Avatar1.png",
+    "FullName": "Pankaj Singh",
+    "Designation": "Marketing Manager",
+    "FeedBack": "Y.A.S.H. completely changed my career trajectory! The AI-focused curriculum is practical and engaging, and the instructors are industry experts who truly care about your success. I feel confident and prepared to take on any AI-related challenge in my field. Highly recommend!"
+  },
+  {
+    "Image": "/assets/Avatar2.png",
+    "FullName": "Priyanka Deshpande",
+    "Designation": "Project Manager",
+    "FeedBack": "The Y.A.S.H. program was a great way to upskill myself in the world of AI. The course material was comprehensive and well-organized, but I found the online format a bit limiting for interactive learning. However, I still gained valuable knowledge and feel more comfortable integrating AI into my work."
+  },
+  {
+    "Image": "../assets/Avatar1.png",
+    "FullName": "Pankaj Singh",
+    "Designation": "Software Engineer",
+    "FeedBack": "Y.A.S.H. offers a solid foundation in AI concepts. However, I would have preferred a more in-depth focus on specific applications relevant to my industry. The program felt a bit broad at times. Overall, a good starting point for beginners in AI"
+  },
+  {
+    "Image": "assets/Avatar1.png",
+    "FullName": "Pankaj Singh",
+    "Designation": "Data Analyst",
+    "FeedBack": "I'm incredibly grateful to Y.A.S.H. for helping me bridge the skill gap in AI. After completing the program, I landed a coveted position at a top tech company. Thank you for empowering me to become an irreplaceable asset in the AI age!"
+  },
+  {
+    "Image": "Avatar1.png",
+    "FullName": "Pankaj Singh",
+    "Designation": "Business Consultan",
+    "FeedBack": "Y.A.S.H. is a must for any professional looking to stay ahead of the curve in the AI-driven world. You won't regret investing in your future!"
+  }
+]

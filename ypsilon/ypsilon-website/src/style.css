@@ -1,0 +1,30 @@
+/* advanced-register-button.css */
+.advanced-register-button {
+  /* Base styles */
+  display: inline-flex;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px; /* Optional slight letter spacing */
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+
+  /* Background and text color options (choose one or customize) */
+  /* Option 1: Gradient background with white text */
+  background-image: linear-gradient(to right, #43a047, #26779b);
+  color: #fff;
+
+  /* Option 2: Solid background with contrasting text color */
+  /* background-color: #4CAF50;  /* Green */
+  /* color: white; */
+
+  /* Optional hover effect */
+  &:hover {
+    transform: scale(1.02); /* Slight scale on hover */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+}
