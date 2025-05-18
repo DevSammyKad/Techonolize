@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balance sheet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="income-exp.html">income</a>
+          </li>
+          <li><a href="COTI.html">COTI</a></li>
+          <li><a href="fixed-deposits.html">DEPOSITS</a></li>
+          <li><a href="balance-sheet.html">balance-sheet</a></li>
+          <li><a href="fixed-assets.html">assets</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="details-section">
+      <h1>Balance Sheet 1</h1>
+      <div class="container">
+        <table>
+          <tr>
+            <th width="700">CAPITAL AND LIABILITIES</th>
+            <th width="300">AMOUNT IN RS.</th>
+          </tr>
+          <tr>
+            <td>CAPITAL ACCOUNT (OPENING BALANCE)</td>
+            <td><input type="number" id="openingBalance" /></td>
+          </tr>
+          <tr>
+            <td>
+              <table border="1" width="700" id="myTable1">
+                <tr>
+                  <th>ADD</th>
+                  <th>Amount in Rs.</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td><input placeholder="" type="text" name="ADD[]" /></td>
+                  <td>
+                    <input type="text" name="amount[]" class="amountField" />
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-del"
+                      type="button"
+                      onclick="deleteRow(this, 'myTable1')"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <button
+                class="btn btn-addrow"
+                type="button"
+                onclick="addRow('myTable1')"
+              >
+                Add Row
+              </button>
+            </td>
+            <td><input type="number" id="totalAmount1" readonly /></td>
+          </tr>
+          <tr>
+            <td>
+              <table border="1" width="700" id="myTable2">
+                <tr>
+                  <th>DRAWINGS</th>
+                  <th>Amount in Rs.</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td><input placeholder="" type="text" name="ADD[]" /></td>
+                  <td>
+                    <input type="text" name="amount[]" class="amountField" />
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-del"
+                      type="button"
+                      onclick="deleteRow(this, 'myTable2')"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <button
+                class="btn btn-addrow"
+                type="button"
+                onclick="addRow('myTable2')"
+              >
+                Add Row
+              </button>
+            </td>
+            <td><input type="number" id="totalAmount2" readonly /></td>
+          </tr>
+          <tr>
+            <td>
+              <table border="1" width="700" id="myTable3">
+                <tr>
+                  <th>SECURED LOANS</th>
+                  <th>Amount in Rs.</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td><input placeholder="" type="text" name="ADD[]" /></td>
+                  <td>
+                    <input type="text" name="amount[]" class="amountField" />
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-del"
+                      type="button"
+                      onclick="deleteRow(this, 'myTable3')"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <button
+                class="btn btn-addrow"
+                type="button"
+                onclick="addRow('myTable3')"
+              >
+                Add Row
+              </button>
+            </td>
+            <td><input type="number" id="totalAmount3" readonly /></td>
+          </tr>
+          <tr>
+            <td>
+              <table border="1" width="700" id="myTable4">
+                <tr>
+                  <th>SECURITY DEPOSITS</th>
+                  <th>Amount in Rs.</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td><input placeholder="" type="text" name="ADD[]" /></td>
+                  <td>
+                    <input type="text" name="amount[]" class="amountField" />
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-del"
+                      type="button"
+                      onclick="deleteRow(this, 'myTable4')"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <button
+                class="btn btn-addrow"
+                type="button"
+                onclick="addRow('myTable4')"
+              >
+                Add Row
+              </button>
+            </td>
+            <td><input type="number" id="totalAmount4" readonly /></td>
+          </tr>
+          <tr>
+            <td>
+              <table border="1" width="700" id="myTable5">
+                <tr>
+                  <th>CURRENT LIABILITIES</th>
+                  <th>Amount in Rs.</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td><input placeholder="" type="text" name="ADD[]" /></td>
+                  <td>
+                    <input type="text" name="amount[]" class="amountField" />
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-del"
+                      type="button"
+                      onclick="deleteRow(this, 'myTable5')"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <button
+                class="btn btn-addrow"
+                type="button"
+                onclick="addRow('myTable5')"
+              >
+                Add Row
+              </button>
+            </td>
+            <td><input type="number" id="totalAmount5" readonly /></td>
+          </tr>
+          <tr>
+            <td>TOTAL RS.</td>
+            <td><input type="text" id="grandtotalcl" readonly /></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <br />
+    <br />
+    <hr />
+
+    <section class="details-section">
+      <div class="container">
+        <table>
+          <th width="700">ASSETS AND PROPERTY</th>
+          <th width="300">AMOUNT IN RS.</th>
+          <tr>
+            <td>
+              <table width="700" id="myTable6">
+                <tr>
+                  <th>FIXED ASSETS</th>
+                  <th>Amount in Rs.</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td><input placeholder="" type="text" name="ADD[]" /></td>
+                  <td>
+                    <input type="text" name="amount[]" class="amountField" />
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-del"
+                      type="button"
+                      onclick="deleteRow(this, 'myTable6')"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <button
+                class="btn btn-addrow"
+                type="button"
+                onclick="addRow('myTable6')"
+              >
+                Add Row
+              </button>
+            </td>
+            <td><input type="number" id="totalAmount6" readonly /></td>
+          </tr>
+          <tr>
+            <td>
+              <table border="1" width="700" id="myTable7">
+                <tr>
+                  <th>OTHER FIXED ASSETS</th>
+                  <th>Amount in Rs.</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td><input placeholder="" type="text" name="ADD[]" /></td>
+                  <td>
+                    <input type="text" name="amount[]" class="amountField" />
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-del"
+                      type="button"
+                      onclick="deleteRow(this, 'myTable7')"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <button
+                class="btn btn-addrow"
+                type="button"
+                onclick="addRow('myTable7')"
+              >
+                Add Row
+              </button>
+            </td>
+            <td><input type="number" id="totalAmount7" readonly /></td>
+          </tr>
+          <tr>
+            <td>
+              <table border="1" width="700" id="myTable8">
+                <tr>
+                  <th>INVESTMENTS</th>
+                  <th>Amount in Rs.</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td><input placeholder="" type="text" name="ADD[]" /></td>
+                  <td>
+                    <input type="text" name="amount[]" class="amountField" />
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-del"
+                      type="button"
+                      onclick="deleteRow(this, 'myTable8')"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <button
+                class="btn btn-addrow"
+                type="button"
+                onclick="addRow('myTable8')"
+              >
+                Add Row
+              </button>
+            </td>
+            <td><input type="number" id="totalAmount8" readonly /></td>
+          </tr>
+          <tr>
+            <td>
+              <table border="1" width="700" id="myTable9">
+                <tr>
+                  <th>CURRENT ASSETS</th>
+                  <th>Amount in Rs.</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td><input placeholder="" type="text" name="ADD[]" /></td>
+                  <td>
+                    <input type="text" name="amount[]" class="amountField" />
+                  </td>
+                  <td>
+                    <button
+                      class="btn btn-del"
+                      type="button"
+                      onclick="deleteRow(this, 'myTable9')"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              </table>
+              <button
+                class="btn btn-addrow"
+                type="button"
+                onclick="addRow('myTable9')"
+              >
+                Add Row
+              </button>
+            </td>
+            <td><input type="number" id="totalAmount9" readonly /></td>
+          </tr>
+          <tr>
+            <td>TOTAL RS.</td>
+            <td><input type="text" id="grandtotalAP" readonly /></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <script>
+      function addRow(tableId) {
+        var table = document.getElementById(tableId);
+        var newRow = table.insertRow(table.rows.length - 1);
+
+        // Insert cells with input fields
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+
+        cell1.innerHTML = '<input placeholder="" type="text" name="ADD[]">';
+        cell2.innerHTML =
+          '<input type="text" name="amount[]" class="amountField" oninput="calculateTotal(\'' +
+          tableId +
+          '\')">';
+        cell3.innerHTML =
+          '<button type="button" onclick="deleteRow(this, \'' +
+          tableId +
+          '\')">Delete</button>';
+      }
+
+      function deleteRow(button, tableId) {
+        var row = button.parentNode.parentNode;
+        var table = document.getElementById(tableId);
+        table.deleteRow(row.rowIndex);
+        calculateTotal(tableId);
+      }
+
+      function calculateTotal(tableId) {
+        var total = 0;
+        var table = document.getElementById(tableId);
+        var rows = table.getElementsByTagName('tr');
+
+        for (var i = 1; i < rows.length - 1; i++) {
+          var row = rows[i];
+          var amountField = row.getElementsByClassName('amountField')[0];
+          var amount = parseFloat(amountField.value) || 0;
+          total += amount;
+        }
+
+        document.getElementById(
+          'totalAmount' + tableId.charAt(tableId.length - 1)
+        ).value = total;
+      }
+    </script>
+  </body>
+</html>
