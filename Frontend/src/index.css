@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  body {
+    @apply min-h-screen;
+  }
+}
+
+@layer utilities {
+}
+h1 {
+  @apply text-3xl lg:text-4xl font-bold;
+}
+
+h2 {
+  @apply text-2xl lg:text-3xl font-medium;
+}
+
+h3 {
+  @apply text-xl lg:text-2xl font-medium;
+}
+
+h4 {
+  @apply text-xl font-medium;
+}
+h5 {
+  @apply text-lg font-medium;
+}
+h6 {
+  @apply text-sm font-medium; /* Apply consistent styles for lower-level headings */
+}
+
+p {
+  @apply text-sm text-gray-700; /* Set default text color */
+}
+li {
+  @apply text-[#0d0c22];
+}
+input {
+  @apply outline-none border-0 ring-0 focus:ring-1 bg-transparent;
+}
+button {
+  @apply p-2 font-medium;
+}
+.tox-statusbar__branding {
+  @apply hidden;
+}
+
+@tailwind utilities;
